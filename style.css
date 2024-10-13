@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+ }
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+ }
+
+.left{
+   position: relative;
+   width: 40%;
+   height: 100%;
+}
+
+
+
+.left .lnav #back{
+      font-size: 30px;
+}
+
+.left .lnav{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 30px;
+   width: 100%;
+}
+
+.lnavr{
+   margin-right: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.lnavr a{
+   margin: 15px;
+   color: black;
+   text-decoration: none;
+   font-size: 15px;
+}
+
+.lnav :nth-child(3){
+   font-size: 25px;
+   color:#179cf0;
+}
+
+.left .textcenter{ 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.textcenter h1{
+   font-size: 85px;
+   font-weight: 900;
+}
+
+.textcenter p{
+   opacity: 0.6;
+   font-size: 15px;
+   line-height: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.textcenter a{
+   color: #000000;
+   opacity: .6;
+   text-decoration: none;
+   border-bottom: 1px solid gray;
+   padding-bottom:5px ;
+}
+
+
+.right{
+   width: 60%;
+   height: 100%;
+   background-color: antiquewhite;
+   
+}
+
+.right .rtop{
+   height: 50%;
+   background: tomato;
+   display: flex;
+}
+
+.rtop .rtopl{
+   width: 55%;
+   height: 100%;
+   background-image: url("https://images.unsplash.com/photo-1728637690621-ad046564a657?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-size: cover;
+}
+
+.rtop .rtopr{
+   width: 45%;
+   height: 100%;
+   background: url("https://plus.unsplash.com/premium_photo-1671436822885-0ef977b97959?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-size: cover;
+}
+
+.right .rbottom{
+   width: 100%;
+   height: 50%;
+   background: url("https://images.unsplash.com/photo-1515523110800-9415d13b84a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-size: cover;
+}
+
+
+@media (max-width:500px) {
+   .main{
+      flex-direction: column;
+      
+   }
+
+   .left{
+      height: 200%;
+      width: 100%;
+   }
+
+   .textcenter{
+      margin-top: 20px;
+      
+   }
+      
+   .right{
+      width: 100%;
+      height: 120%;
+   }
+}
